@@ -80,10 +80,10 @@ stateDiagram-v2
     Mode2_Normal --> Mode1_Idle : RPM=0 >10s
     Mode3_Buru --> Mode1_Idle : RPM=0 >10s
 
----
+```
 
 📊 Flowchart Program
-
+```mermaid
 flowchart TD
     A[Loop Start] --> B[Baca Sensor Suara]
     B --> C[Cek Tombol]
@@ -115,10 +115,11 @@ flowchart TD
     Q -->|Tidak| A
     R --> A
 
----
+```
 
 📈 Diagram Timing
 
+```mermaid
 gantt
     title Siklus Servo 1 Menit
     dateFormat X
@@ -132,7 +133,7 @@ gantt
     section Loop
     Repeat :a3, 120, 60
 
----
+```
 
 🖥️ Tampilan LCD
 
