@@ -136,63 +136,62 @@ gantt
 ```
 
 🖥️ Tampilan LCD
-
+```
 ┌──────────────────┐
 │ M:1 RPM:4000     │
 │ S:85% V:CLOSE    │
 └──────────────────┘
 
----
+```
 
 🔧 Mode Operasi
 
 🟢 Mode 1 - Idle
-
+```
 Kondisi| Aksi Servo
 Suara > 80| CLOSE
 Suara ≤ 80| OPEN
 
----
+```
 
 🟡 Mode 2 - Normal
-
+```
 Kondisi| Aksi
 Suara > 80 & RPM > 4000| Siklus 1 menit
 Tidak terpenuhi| OPEN
-
----
+```
 
 🔴 Mode 3 - Buru
-
+```
 Kondisi| Aksi
 RPM < 4000| Siklus
 RPM ≥ 4000| OPEN
 
----
+```
 
 ⚡ Auto Reset
-
+```
 - RPM = 0 selama 10 detik → kembali ke Mode 1
 
----
+```
 
 🚀 Upload (PlatformIO)
-
+```
 pio run
 pio run --target upload
 pio device monitor
 
----
+```
 
 📁 Struktur Project
-
+```
 servo-katup-kontrol/
 ├── platformio.ini
 ├── README.md
 ├── src/
 │   └── main.cpp
 
----
+```
 
 📜 Lisensi
 
